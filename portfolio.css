@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B);
 
 *{
@@ -19,8 +18,8 @@ body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: black;
-    color: white;
+    background-color: #CDC1FF;
+    color: black;
 }
 
 header {
@@ -52,7 +51,7 @@ header {
 
 nav a {
     font-size: 1.8rem;
-    color: white;
+    color: #6889a3;
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
@@ -61,8 +60,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: #003C43;
-    border-bottom: 3px solid #003C43;
+    color: #789DBC;
+    border-bottom: 3px solid #789DBC;
 }
 
 @media(max-width:995px) {
@@ -76,7 +75,7 @@ nav a.active {
         border-bottom: 3px solid #b74b4b;
         border-bottom-left-radius: 2rem;
         padding: 1rem solid;
-        background-color: #161616;
+        background-color: #C9E9D2;
         border-top: 0.1rem solid rgba(0, 0, 0, 1);
     }
 
@@ -94,7 +93,7 @@ nav a.active {
     nav a.active {
         padding: 1rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #b74b4b;
+        border-bottom: 0.5rem solid #C9E9D2;
     }
 }
 
@@ -108,7 +107,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: #135D66;
+    background-color: #FEF9F2;
 }
 
 .home .home-content h1 {
@@ -118,7 +117,7 @@ section {
 }
 
 span {
-    color: #E3FEF7;
+    color: #2f3e4b;
 }
 
 .home-content h3 {
@@ -128,14 +127,14 @@ span {
 }
 
 .home-content h3 span {
-    color: #77B0AA;
+    color: #6889a3;
 }
 
 .home-img img {
     position: relative;
     width: 29vw;
     border-radius: 8%;
-    box-shadow: 0 0 25px solid #b74b4b;
+    box-shadow: 0 0 25px solid #789DBC;
     cursor: pointer;
     transition: 0.2s linear;
 }
@@ -151,8 +150,8 @@ span {
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background-color: #6A9C89;
-    border: 0.2rem solid #6A9C89;
+    background-color: #6889a3;
+    border: 0.2rem solid #6889a3;
     font-size: 2rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
@@ -204,23 +203,6 @@ span {
     font-size: 15px ;
 }
 
-/* .typing-text span::before {
-    content: "Software Developer";
-    color: #6A9C89;
-    animation: words 20s infinite;
-}
-
-.typing-text span::After {
-    content: "";
-    background-color: #135D66;
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid #16423C;
-    right: -8;
-    animation: cursor 0.6s infinite;
-} */
-
 @keyframes cursor {
     to {
         border-left: 3px solid #16423C;
@@ -228,29 +210,9 @@ span {
     
 }
 
-@keyframes words {
-    0%, 20% {
-        content: "Web Developer";
-    }
-
-    21%, 40% {
-        content: "Software Developer";
-    }
-    41%, 61% {
-        content: "API Developer";
-    }
-}
-
-@media (max-width: 1000px) {
-    .home {
-        gap: 4rem;
-    }
-}
-
 @media(max-width: 995px) {
     .home {
         flex-direction: column;
-        margin: 5rem 4rem;
     }
 
     .home .home-content h3 {
@@ -260,9 +222,15 @@ span {
     .home-content h1 {
         font-size: 5rem;
     }
+}
 
+@media(max-width: 800px) {
     .home-img img {
-        margin-top: 4rem;
+        width: 100%;
+        height: auto;
     }
 }
+
+
+
 
